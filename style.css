@@ -1,0 +1,123 @@
+/* --- STYLE DE BASE --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+  font-size: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* --- TITRES --- */
+h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-top: 2.8rem;
+  margin-bottom: 0.6rem;
+  font-weight: 500;
+}
+
+/* --- LIENS --- */
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- STRUCTURE --- */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.main {
+  flex: 3;
+  min-width: 60%;
+}
+
+.side {
+  flex: 1;
+  min-width: 200px;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.side ul {
+  list-style: none;
+}
+
+.side li {
+  margin-bottom: 0.75rem;
+}
+
+.side a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.side a:hover {
+  color: #0077cc;
+}
+
+/* --- LISTES ET PARAGRAPHES --- */
+p, ul, ol {
+  margin-bottom: 1rem;
+}
+
+ul li {
+  margin-left: 1rem;
+}
+
+/* --- ICÔNES --- */
+i {
+  color: #777;
+}
+
+/* --- RÉSPONSIVE --- */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .side {
+    order: -1;
+  }
+}
