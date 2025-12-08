@@ -39,10 +39,26 @@
             <figure>
             <img src="https://cdn.prod.website-files.com/680a070c3b99253410dd3df5/684d85646cdaf7e5252b8497_67ed519cbf3f228c7bb790d7_67c99ff6c72a1cf68c554ff4_Segmentation_fig5.webp" alt="Des engins de chantiers detourés, auxquels sont apposés des étiquettes désignant le type de véhicule"><figcaption>Des engins de chantiers segmentés à l'aide d'un modèle yolo</figcaption></figure>
             
-        <p> Ce guide est destiné à des personnes ayant des niveaux informatiques variables, et est pensé pour n'avoir aucun prérequis technique d'entrée, si certains termes vous sont étrangers n'hésitez pas à consulter notre lexique.
-                <p>Cette section s'appuiera principalement sur les travaux menés dans le cadre des projets <a href="projets.html#torneh">Torne-H</a>, <a href="projets.html#hikaria">Hikaria</a>, <a href="projets.html#VHS">VHS</a>, <a href="projets.html#eida">Eida</a>, et des laboratoires d'archéologie AOrOc (UMR 8546) et Arscan (UMR 7041).</p>
-                <p>Un usage efficace et facile à mettre en place de l'IA observé dans ces travaux est d'abord la segmentation d'éléments dans des vues numérisées. </p>
-            
+            <p>La segmentation peut servir, sur des corpus sériels, à  identifier les éléments représentés sur une images. Dans le cadre du projet Torne-H, un modèle de segmentation a par exemple été entraîné afin de déterminer quels types de meubles sont présents sur les dessins préparatoires de designers.
+                Elle peut aussi par exemple servir de pré-traitement pour travailler sur des images contenues dans des ouvrages, ou dans d'autres images. On peut envisager ainsi de repérer les oeuvres dans des photographies d'exposition, dans des catalogues d'exposition, ou encore des manuscrits, comme ça a été le cas pour les projets EIDA et VHS. </p>
+            <p> Les principales familles de modèles de segmentation sont les modèles YOLO, ou DINO, qui associe une "classe" à des parties de l'image, ou les modèles SAM, capables de découper les images en fonction des traits et de caractéristiques visuelles.</p>
+
+            <p>Les modèles de classification vont, comme leur nom l'indique, associer une image à une "classe". Contrairement aux modèles de segmentation, qui peuvent, pour certains associer des classes à une partie de l'image, les modèles de classification associent une classe à l'intégralité de l'image. 
+               Ce type de modèle sera particulièrement intéressant sur un nombre limité de classe. On peut par exemple facilement envisager des traitements qui sépareraient les images sur un niveau de description "bas", comme c'est le cas dans l'image ci-dessous, ou à l'aide de modèles spécialisés sur des corpus déjà triés. C'est par exemple ce qui a pu être fait sur des motifs de tessons de poterie.
+                Il faut plus généralement retenir le principe que plus on demandera de classes différentes à un modèle, moins il sera précis pour un entraînement équivalent.</p>
+                <figure>
+                    <img src = "classification3.png" alt="un schéma représentant le fonctionnement d'un modèle classifiant des tableaux en 4 catégories, nature morte, paysage, portrait et scènes"><figcaption>Représentation d'un modèle entraîné par Pierre Husson au service numérique de la recherche de l'INHA. Le modèle détermine si le tableau est un portrait, une nature morte, un paysage, les autres tableaux sont rassemblés sous le titre fourre-tout de "scène".</figcaption>
+                </figure>
+              <p>  La classification est utile pour trier des images en masse sur des corpus relativement homogènes. En l'état ces modèles ne sont pas fiables sur un trop grand nombre de classes, mais fonctionnels sur un petit nombre. Comme la segmentation, les modèles de types Yolo ou Dino peuvent réaliser des classifications. On peut également utiliser certains modèles de VLM/LLM (insérer définition), comme Florence, ou Qwen pour ces tâches, mais obtenir des sorties structurées et controlables demande un travail plus fin.  </p>
+
+
+                
+
+
+
+
+
+
 
 
             <h2>Reconnaissance et transcription de textes imprimés et manuscrits</h2>
