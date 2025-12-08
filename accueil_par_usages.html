@@ -40,6 +40,26 @@
             <img src="https://cdn.prod.website-files.com/680a070c3b99253410dd3df5/684d85646cdaf7e5252b8497_67ed519cbf3f228c7bb790d7_67c99ff6c72a1cf68c554ff4_Segmentation_fig5.webp" alt="Des engins de chantiers detourés, auxquels sont apposés des étiquettes désignant le type de véhicule"><figcaption>Des engins de chantiers segmentés à l'aide d'un modèle yolo</figcaption></figure>
             
         <p> Ce guide est destiné à des personnes ayant des niveaux informatiques variables, et est pensé pour n'avoir aucun prérequis technique d'entrée, si certains termes vous sont étrangers n'hésitez pas à consulter notre lexique.
+                <p>Cette section s'appuiera principalement sur les travaux menés dans le cadre des projets <a href="projets.html#torneh">Torne-H</a>, <a href="projets.html#hikaria">Hikaria</a>, <a href="projets.html#VHS">VHS</a>, <a href="projets.html#eida">Eida</a>, et des laboratoires d'archéologie AOrOc (UMR 8546) et Arscan (UMR 7041).</p>
+                <p>Un usage efficace et facile à mettre en place de l'IA observé dans ces travaux est d'abord la segmentation d'éléments dans des vues numérisées. </p>
+            
+
+
+            <h2>Reconnaissance et transcription de textes imprimés et manuscrits</h2>
+            <p>Cette section décrira les usages possibles de technologies IA pour automatiser la reconnaissance de caractères dans des documents numérisés. L'OCR (Optical Character Recognition) et l'HTR (Handwritten Text Recognition) sont des technologies qui ont beaucoup évolués ces dernières années grâce aux progrès de l'IA, et en particulier du <a href="lexique.html#Deep-learning"> deep learning</a>. De nombreux outils et applications sont désormais disponibles pour automatiser la reconnaissance de caractères dans des documents imprimés ou manuscrits, avec des niveaux de performance très élevés. </p>
+            <h3>Tour d'horizon rapide</h3>
+                <p>Ce sont des technologies plus anciennes et plus éprouvées que celles de vision par ordinateur ou d'IA génératives et elles se séparent donc en deux grandes catégories : l'OCR et l'HTR.
+                Concernant l'HTR nous pouvons citer des outils comme <a href="applications.html#kraken">Kraken</a> qui offrent une solution complète de l'installation, aux premiers travaux de reconnaissances jusqu'au ré-entrainement pour <a href="lexique.html#Finetuning">fine-tuning</a> et l'export massif.</p>
+                <p>Ou bien des solutions comme <a href="applications.html#transkribus">Transkribus</a> ou <a href="applications.html#escriptorium">eScriptorium</a> proposent des interfaces utilisateurs et des performances élevées.</p>
+                <p>Ensuite, pour l'OCR beaucoup d'outils existent mais nous mentionnons l'existence de deux projets performants <a href="applications.html#peroocr">PeroOCR</a> et <a href="applications.html#tesseract">Tesseract</a> qui offrent des bons résultats complètement gratuitements</p>
+
+            <h3>Mise en place</h3>
+                <p>La mise en place de ces technologies dépendra de vos besoins, de vos compétences techniques et de vos ressources matérielles. Pour des besoins ponctuels ou des volumes limités, des solutions en ligne comme Transkribus peuvent être suffisantes. Pour des besoins plus importants ou des exigences spécifiques, l'installation locale de Kraken ou Tesseract peut être nécessaire.</p>
+                <p>Il est important de noter que la qualité des résultats dépendra fortement de la qualité des images numérisées et de la spécificité des documents (langue, écriture, mise en page). Dans certains cas, un ré-entrainement du modèle peut être nécessaire pour obtenir des résultats satisfaisants.</p>
+                <p>En terme d'infrastructures des <a href="lexique.html#GPU">GPU</a> risquent d'être nécessaires pour les larges corpus (au-delà de 1000 pages). Pour les moyens humains, il faut avoir en tête qu'avoir une personne qui parle la langue, ou lit l'écriture du siècle en question est souvent indispensable pour le réentrainement. Du côté technique, les applications ne sont pas excessivement compliquées et elles sont bien documentées, mais leur manipulation requiert un minimum d'aisance avec l'informatique.</p>
+
+        </section>
+        <section><p> Ce guide est destiné à des personnes ayant des niveaux informatiques variables, et est pensé pour n'avoir aucun prérequis technique d'entrée, si certains termes vous sont étrangers n'hésitez pas à consulter notre lexique.
             Du fait de l'évolution très rapide des technologies dans ce secteur certains des projets et certaines des applications présentées dans ce guide peuvent être obsolètes au moment de la lecture.
             En introduction de ce guide nous voulons également insister sur le fait que l'"IA" ne doit pas être une fin en soi, et devrait être utilisée comme un outil pour accomplir une mission.
             A ce titre, des questions telles que le régime de droit des données traitées, le coût économique, écologique ou l'accompagnement au changement doivent être réflechies de la même manière que pour n'importe quel outil numérique.</p>
