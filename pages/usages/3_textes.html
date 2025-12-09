@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/cb0e37a241.js" crossorigin="anonymous"></script>
+    <title>OCR et HTR</title>
+</head>
+
+<body>
+    <div class="flex">
+    <div id="side"></div>
+    <section class="main">
+        <h2>Reconnaissance et transcription de textes imprimés et manuscrits</h2>
+        <p>Cette section décrira les usages possibles de technologies IA pour automatiser la reconnaissance de
+            caractères dans des documents numérisés. L'OCR (Optical Character Recognition) et l'HTR (Handwritten
+            Text Recognition) sont des technologies qui ont beaucoup évolués ces dernières années grâce aux progrès
+            de l'IA, et en particulier du <a href="/pages/lexique.html#Deep-learning"> deep learning</a>. De
+            nombreux
+            outils et applications sont désormais disponibles pour automatiser la reconnaissance de caractères dans
+            des documents imprimés ou manuscrits, avec des niveaux de performance très élevés. </p>
+        <h3>Tour d'horizon rapide</h3>
+        <p>Ce sont des technologies plus anciennes et plus éprouvées que celles de vision par ordinateur ou d'IA
+            génératives et elles se séparent donc en deux grandes catégories : l'OCR et l'HTR.
+            Concernant l'HTR nous pouvons citer des outils comme <a href="/pages/applications.html#kraken">Kraken</a>
+            qui
+            offrent une solution complète de l'installation, aux premiers travaux de reconnaissances jusqu'au
+            ré-entrainement pour <a href="/pages/lexique.html#Finetuning">fine-tuning</a> et l'export massif.</p>
+        <p>Ou bien des solutions comme <a href="/pages/applications.html#transkribus">Transkribus</a> ou <a
+                href="/pages/applications.html#escriptorium">eScriptorium</a> proposent des interfaces utilisateurs
+            et des
+            performances élevées.</p>
+        <p>Ensuite, pour l'OCR beaucoup d'outils existent mais nous mentionnons l'existence de deux projets
+            performants <a href="/pages/applications.html#peroocr">PeroOCR</a> et <a
+                href="/pages/applications.html#tesseract">Tesseract</a> qui offrent des bons résultats complètement
+            gratuitements</p>
+        <img src="/images/HTR_Calfa_BnF.png"
+            alt="capture d'écran montrant un résultat d'HTR sur des textes arabes manuscrits">
+
+        <h3>Mise en place</h3>
+        <p>La mise en place de ces technologies dépendra de vos besoins, de vos compétences techniques et de vos
+            ressources matérielles. Pour des besoins ponctuels ou des volumes limités, des solutions en ligne comme
+            Transkribus peuvent être suffisantes. Pour des besoins plus importants ou des exigences spécifiques,
+            l'installation locale de Kraken ou Tesseract peut être nécessaire.</p>
+        <p>Il est important de noter que la qualité des résultats dépendra fortement de la qualité des images
+            numérisées et de la spécificité des documents (langue, écriture, mise en page). Dans certains cas, un
+            ré-entrainement du modèle peut être nécessaire pour obtenir des résultats satisfaisants.</p>
+        <p>En terme d'infrastructures des <a href="/pages/lexique.html#GPU">GPU</a> risquent d'être nécessaires pour
+            les
+            larges corpus (au-delà de 1000 pages). Pour les moyens humains, il faut avoir en tête qu'avoir une
+            personne qui parle la langue, ou lit l'écriture du siècle en question est souvent indispensable pour le
+            réentrainement. Du côté technique, les applications ne sont pas excessivement compliquées et elles sont
+            bien documentées, mais leur manipulation requiert un minimum d'aisance avec l'informatique.</p>
+        <img src="/images/OCR_Hugo_BnF.png"
+            alt="capture d'écran montrant un résultat d'un OCR sur un texte de Victor Hugo">
+        <h2> Et les LLMs génératifs dans tout ça ?</h2>
+        <p>Lorem ipsum etc etc</p>
+    </section>
+    </div>
+    <script src="/scripts/include.js"></script>
+</body>
+
+</html>

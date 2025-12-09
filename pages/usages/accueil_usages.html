@@ -17,6 +17,7 @@
         <div id="side"></div>
         <section class="main">
             <h2 id="Début-du-guide">Début du guide</h2>
+            
 
             <p> Ce guide de ressources a pour objectif de donner un premier aperçu et quelques conseils de bonnes
                 pratiques, en
@@ -56,14 +57,17 @@
                 et dans un futur proche n'ont absolument pas vocation à remplacer les personnels scientifiques des
                 musées, ne serait-ce que parce que leur travail est absolument nécessaire pour entraîner, évaluer et
                 contrôler les systèmes IA.
-                En plus de cela, aucun <a href="lexique.html#Modèle-IA"> modèle généraliste</a> n'est à ce jour capable
+                En plus de cela, aucun <a href="/pages/lexique.html#Modèle-IA"> modèle généraliste</a> n'est à ce jour
+                capable
                 de traiter de manière autonome et convaincante des collections patrimoniales, et l'entraînement de <a
-                    href="lexique.html#Modèle-IA"> modèles spécialisés</a> requiert l'aide de spécialistes capables de
+                    href="/pages/lexique.html#Modèle-IA"> modèles spécialisés</a> requiert l'aide de spécialistes
+                capables de
                 produire et fournir des données d'entraînement de qualité. L'idée de cette section sera de proposer des
                 outils, algorithmes et applications pour intégrer des éléments IA au travail sur les collections.</p>
             <p>Cette section s'appuiera principalement sur les travaux menés dans le cadre des projets <a
-                    href="exemples.html#torneh"> Torne-H</a>, <a href="exemples.html#hikaria">Hikaria</a>, <a
-                    href="exemples.html#VHS">VHS</a>, <a href="exemples.html#eida">Eida</a>, et des laboratoires
+                    href="/pages/exemples.html#torneh"> Torne-H</a>, <a href="/pages/exemples.html#hikaria">Hikaria</a>,
+                <a href="/pages/exemples.html#VHS">VHS</a>, <a href="/pages/exemples.html#eida">Eida</a>, et des
+                laboratoires
                 d'archéologie AOrOc (UMR 8546) et Arscan (UMR 7041).</p>
             <p>Un usage efficace à mettre en place de l'IA observé dans ces travaux est d'abord la segmentation
                 d'éléments dans des vues numérisées. Ci-dessous un exemple réalisé à l'aide d'un modèle Yolo : </p>
@@ -94,7 +98,7 @@
                 Il faut plus généralement retenir le principe que plus on demandera de classes différentes à un modèle,
                 moins il sera précis pour un entraînement équivalent.</p>
             <figure>
-                <img src="classification3.png"
+                <img src="/images/classification3.png"
                     alt="un schéma représentant le fonctionnement d'un modèle classifiant des tableaux en 4 catégories, nature morte, paysage, portrait et scènes">
                 <figcaption>Représentation d'un modèle entraîné par Pierre Husson au service numérique de la recherche
                     de l'INHA. Le modèle détermine si le tableau est un portrait, une nature morte, un paysage, les
@@ -104,7 +108,8 @@
                 homogènes. En l'état ces modèles ne sont pas fiables sur un trop grand nombre de classes, mais
                 fonctionnels sur un petit nombre. Comme la segmentation, les modèles de types Yolo ou Dino peuvent
                 réaliser des classifications. On peut également utiliser certains modèles de <a
-                    href="lexique.html#LLM">VLM/LLM</a>, comme Florence, ou Qwen pour ces tâches, mais obtenir des
+                    href="/pages/lexique.html#LLM">VLM/LLM</a>, comme Florence, ou Qwen pour ces tâches, mais obtenir
+                des
                 sorties structurées et controlables de ces modèles demande un travail plus fin. </p>
             <p>La description et l'indexation d'images sont deux objets problématiques loin d'être résolus au moment
                 d'écriture de ce guide. La description est envisageable avec des modèles type VLM, mais pose le problème
@@ -123,23 +128,26 @@
             <p>Cette section décrira les usages possibles de technologies IA pour automatiser la reconnaissance de
                 caractères dans des documents numérisés. L'OCR (Optical Character Recognition) et l'HTR (Handwritten
                 Text Recognition) sont des technologies qui ont beaucoup évolués ces dernières années grâce aux progrès
-                de l'IA, et en particulier du <a href="lexique.html#Deep-learning"> deep learning</a>. De nombreux
+                de l'IA, et en particulier du <a href="/pages/lexique.html#Deep-learning"> deep learning</a>. De
+                nombreux
                 outils et applications sont désormais disponibles pour automatiser la reconnaissance de caractères dans
                 des documents imprimés ou manuscrits, avec des niveaux de performance très élevés. </p>
             <h3>Tour d'horizon rapide</h3>
             <p>Ce sont des technologies plus anciennes et plus éprouvées que celles de vision par ordinateur ou d'IA
                 génératives et elles se séparent donc en deux grandes catégories : l'OCR et l'HTR.
-                Concernant l'HTR nous pouvons citer des outils comme <a href="applications.html#kraken">Kraken</a> qui
+                Concernant l'HTR nous pouvons citer des outils comme <a
+                    href="/pages/applications.html#kraken">Kraken</a> qui
                 offrent une solution complète de l'installation, aux premiers travaux de reconnaissances jusqu'au
-                ré-entrainement pour <a href="lexique.html#Finetuning">fine-tuning</a> et l'export massif.</p>
-            <p>Ou bien des solutions comme <a href="applications.html#transkribus">Transkribus</a> ou <a
-                    href="applications.html#escriptorium">eScriptorium</a> proposent des interfaces utilisateurs et des
+                ré-entrainement pour <a href="/pages/lexique.html#Finetuning">fine-tuning</a> et l'export massif.</p>
+            <p>Ou bien des solutions comme <a href="/pages/applications.html#transkribus">Transkribus</a> ou <a
+                    href="/pages/applications.html#escriptorium">eScriptorium</a> proposent des interfaces utilisateurs
+                et des
                 performances élevées.</p>
             <p>Ensuite, pour l'OCR beaucoup d'outils existent mais nous mentionnons l'existence de deux projets
-                performants <a href="applications.html#peroocr">PeroOCR</a> et <a
-                    href="applications.html#tesseract">Tesseract</a> qui offrent des bons résultats complètement
+                performants <a href="/pages/applications.html#peroocr">PeroOCR</a> et <a
+                    href="/pages/applications.html#tesseract">Tesseract</a> qui offrent des bons résultats complètement
                 gratuitements</p>
-            <img src="HTR_Calfa_BnF.png"
+            <img src="/images/HTR_Calfa_BnF.png"
                 alt="capture d'écran montrant un résultat d'HTR sur des textes arabes manuscrits">
 
             <h3>Mise en place</h3>
@@ -150,12 +158,14 @@
             <p>Il est important de noter que la qualité des résultats dépendra fortement de la qualité des images
                 numérisées et de la spécificité des documents (langue, écriture, mise en page). Dans certains cas, un
                 ré-entrainement du modèle peut être nécessaire pour obtenir des résultats satisfaisants.</p>
-            <p>En terme d'infrastructures des <a href="lexique.html#GPU">GPU</a> risquent d'être nécessaires pour les
+            <p>En terme d'infrastructures des <a href="/pages/lexique.html#GPU">GPU</a> risquent d'être nécessaires pour
+                les
                 larges corpus (au-delà de 1000 pages). Pour les moyens humains, il faut avoir en tête qu'avoir une
                 personne qui parle la langue, ou lit l'écriture du siècle en question est souvent indispensable pour le
                 réentrainement. Du côté technique, les applications ne sont pas excessivement compliquées et elles sont
                 bien documentées, mais leur manipulation requiert un minimum d'aisance avec l'informatique.</p>
-            <img src="OCR_Hugo_BnF.png" alt="capture d'écran montrant un résultat d'un OCR sur un texte de Victor Hugo">
+            <img src="/images/OCR_Hugo_BnF.png"
+                alt="capture d'écran montrant un résultat d'un OCR sur un texte de Victor Hugo">
             <h2> Et les LLMs génératifs dans tout ça ?</h2>
             <p>Lorem ipsum etc etc</p>
         </section>
