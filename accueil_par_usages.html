@@ -56,20 +56,10 @@
                 <figure>
                     <img src = "classification3.png" alt="un schéma représentant le fonctionnement d'un modèle classifiant des tableaux en 4 catégories, nature morte, paysage, portrait et scènes"><figcaption>Représentation d'un modèle entraîné par Pierre Husson au service numérique de la recherche de l'INHA. Le modèle détermine si le tableau est un portrait, une nature morte, un paysage, les autres tableaux sont rassemblés sous le titre fourre-tout de "scène".</figcaption>
                 </figure>
-              <p>  La classification est utile pour catégoriser des images sur des corpus massifs mais relativement homogènes. En l'état ces modèles ne sont pas fiables sur un trop grand nombre de classes, mais fonctionnels sur un petit nombre. Comme la segmentation, les modèles de types Yolo ou Dino peuvent réaliser des classifications. On peut également utiliser certains modèles de VLM/LLM (insérer définition), comme Florence, ou Qwen pour ces tâches, mais obtenir des sorties structurées et controlables de ces modèles demande un travail plus fin.  </p>
+              <p>  La classification est utile pour catégoriser des images sur des corpus massifs mais relativement homogènes. En l'état ces modèles ne sont pas fiables sur un trop grand nombre de classes, mais fonctionnels sur un petit nombre. Comme la segmentation, les modèles de types Yolo ou Dino peuvent réaliser des classifications. On peut également utiliser certains modèles de <a href="lexique.html#LLM">VLM/LLM</a>, comme Florence, ou Qwen pour ces tâches, mais obtenir des sorties structurées et controlables de ces modèles demande un travail plus fin.  </p>
             <p>La description et l'indexation d'images sont deux objets problématiques loin d'être résolus au moment d'écriture de ce guide. La description est envisageable avec des modèles type VLM, mais pose le problème fondamental de la mesurabilité des résultats. L'indexation sur plusieurs niveaux à l'aide de thésaurus complexes comme le thésaurus Garnier pose un problème différent, qui est l'inadaptation des modèles d'IA contemporrains à ces plusieurs niveau d'indexation. 
                 On peut envisager un traitement par plusieurs modèles de classification pour imiter les différents niveaux d'un thésaurus, mais il faut noter que la multiplication des traitements multiplie le nombre d'erreurs, et chaque entraînement a un cout technique et écologique qui doit être pris en compte. Pour ces deux usages, s'il ne faut pas exclure les traitement entièrement automatisés, sur des quantités raisonnables d'images nous recommanderions plutôt d'avoir recours à l'IA pour appuyer le personnel scientifique, dans le cadre de traitements semi automatiques, comme décrit dans le partie 3 (insérer lien) de ce guide.
              </p>
-
-                
-
-
-
-
-
-
-
-
             <h2>Reconnaissance et transcription de textes imprimés et manuscrits</h2>
             <p>Cette section décrira les usages possibles de technologies IA pour automatiser la reconnaissance de caractères dans des documents numérisés. L'OCR (Optical Character Recognition) et l'HTR (Handwritten Text Recognition) sont des technologies qui ont beaucoup évolués ces dernières années grâce aux progrès de l'IA, et en particulier du <a href="lexique.html#Deep-learning"> deep learning</a>. De nombreux outils et applications sont désormais disponibles pour automatiser la reconnaissance de caractères dans des documents imprimés ou manuscrits, avec des niveaux de performance très élevés. </p>
             <h3>Tour d'horizon rapide</h3>
